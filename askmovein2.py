@@ -58,10 +58,11 @@ def get_answer(question):
 
 # === Dropdown for Suggested Questions ===
 suggestions = [
-    "What is the privacy policy?",
-    "Can you explain the terms of service?",
-    "What are the community guidelines?",
-    "What is the refund and cancellation policy?",
+    "How do I find a sublease as a student on movein2.com?",
+    "Is there any fee for posting a sublease or rental listing?",
+    "How can I tell if a listing is legit before I make a payment?",
+    "Can landlords manage multiple properties on movein2.com?"
+    "How do I communicate with potential subtenants or landlords?",
     "Other..."
 ]
 
