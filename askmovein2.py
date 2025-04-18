@@ -38,12 +38,31 @@ st.markdown("""
         color: #ffffff;
         font-weight: bold;
     }
+    .logo-container {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: -10px;
+        background-color: #ffffff;  /* White background */
+        border-radius: 8px;  /* Optional: add rounded corners */
+        padding: 10px;
+    }
+    .logo-container img {
+        width: 80px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
+# === Logo/Image above title ===
+st.markdown(
+    '<div class="logo-container">'
+    '<img src="https://cdn-icons-png.flaticon.com/512/69/69524.png" alt="house logo" />'
+    '</div>',
+    unsafe_allow_html=True
+)
+
 # === Title and Subheading ===
 st.markdown('<div class="title">Movein2.com – Smart Subleasing Assistant</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Helping students find the perfect sublease hassle-free</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Helping students find the perfect sublease near their campus</div>', unsafe_allow_html=True)
 
 # === Function to get API response ===
 def get_answer(question):
