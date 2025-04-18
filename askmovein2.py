@@ -56,23 +56,21 @@ def get_answer(question):
     else:
         st.error(f"Error {response.status_code}: {response.text}")
 
-# === Suggested Questions (side by side, disabled) ===
-st.markdown("### 💡 Suggested Questions")
-
+# === Dropdown for Suggested Questions ===
 suggestions = [
     "What is the privacy policy?",
     "Can you explain the terms of service?",
     "What are the community guidelines?",
-    "What is the refund and cancellation policy?"
+    "What is the refund and cancellation policy?",
+    "Other..."
 ]
 
-cols = st.columns(len(suggestions))
-for idx, col in enumerate(cols):
-    with col:
-        st.button(suggestions[idx], disabled=True)
+selected_question = st.selectbox("📝 Type about your sublease:", suggestions)
 
-# === Unified Input with Default Question ===
-user_question = st.text_input("📝 Type about your sublease:", value="What is the privacy policy?")
+if selected_question == "Other...":
+    user_question = st.text_input("Please type your question:")
+else:
+    user_question = selected_question
 
 # === Ask Button ===
 if st.button("AskMoveIn2"):
