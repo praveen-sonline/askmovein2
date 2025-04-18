@@ -58,8 +58,8 @@ def get_answer(question):
 
 # === Dropdown for Suggested Questions ===
 suggestions = [
-    "What is MoveIn2's role in rental agreements and subleases?",
     "How does MoveIn2 protect my personal and payment information?",
+    "What is MoveIn2's role in rental agreements and subleases?",  
     "What actions can get my account suspended on MoveIn2?",
     "What are the rules for writing a review on MoveIn2?",
     "What behavior is not allowed in the MoveIn2 community?",
