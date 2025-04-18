@@ -66,7 +66,7 @@ suggestions = [
     "Other..."
 ]
 
-selected_question = st.selectbox("📝 Type about your sublease:", suggestions)
+selected_question = st.selectbox("📝 Ask about your sublease:", suggestions)
 
 if selected_question == "Other...":
     user_question = st.text_input("Please type your question:")
@@ -80,5 +80,10 @@ if st.button("AskMoveIn2"):
     else:
         get_answer(user_question)
 
-# === Footer ===
-st.markdown('<div class="footer">✨ Designed by <span class="movein2">MoveIn2 GenAI Team</span></div>', unsafe_allow_html=True)
+# === Footer with Support Contact ===
+st.markdown(
+    '<div class="footer">✨ Designed by <span class="movein2">MoveIn2 GenAI Team</span><br>'
+    '📧 Need help? Contact us at <a href="mailto:support@movein2.com" style="color:#ffffff;">support@movein2.com</a>'
+    '</div>',
+    unsafe_allow_html=True
+)
