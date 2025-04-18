@@ -58,11 +58,11 @@ def get_answer(question):
 
 # === Dropdown for Suggested Questions ===
 suggestions = [
-    "How do I find a sublease as a student on movein2.com?",
-    "Is there any fee for posting a sublease or rental listing?",
-    "How can I tell if a listing is legit before I make a payment?",
-    "Can landlords manage multiple properties on movein2.com?"
-    "How do I communicate with potential subtenants or landlords?",
+    "What is MoveIn2's role in rental agreements and subleases?",
+    "How does MoveIn2 protect my personal and payment information?",
+    "What actions can get my account suspended on MoveIn2?",
+    "What are the rules for writing a review on MoveIn2?",
+    "What behavior is not allowed in the MoveIn2 community?",
     "Other..."
 ]
 
