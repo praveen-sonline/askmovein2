@@ -40,11 +40,15 @@ st.markdown("""
     }
     .logo-container {
         text-align: center;
+        background-color: #ffffff;  /* White background around the image */
+        border-radius: 8px;  /* Optional: add rounded corners */
+        padding: 5px;  /* Reduced padding */
+        display: block;  /* Changed to block to center */
         margin-top: 10px;
         margin-bottom: -10px;
-        background-color: #ffffff;  /* White background */
-        border-radius: 8px;  /* Optional: add rounded corners */
-        padding: 10px;
+        margin-left: auto;  /* Center the container */
+        margin-right: auto;  /* Center the container */
+        width: fit-content;  /* Adjust width to fit content */
     }
     .logo-container img {
         width: 80px;
